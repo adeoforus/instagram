@@ -1,0 +1,19 @@
+{
+  "require": {
+    "symfony/validator":         "2.1.*",
+    "doctrine/dbal":             "2.2.*",
+    "monolog/monolog":           "dev-master",
+    "jtreminio/test-extensions": "dev-master",
+    "bramus/router": "~1.0",
+    "kriswallsmith/assetic": "1.2.*@dev",
+    "twig/twig": "~1.0",
+    "cboden/ratchet": "dev-master"
+  },
+  "minimum-stability": "dev",
+  "autoload":{
+    "psr-0":{
+      "Client": "src",
+      "App":"src"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+    <style>
+        .medium-margin{
+            margin-right: 20px;
+        }
+    </style>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-md-offset-2">
+                <div class="white-space-60"></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Search your tag</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form method="get" action="{{ router['search'] }}">
+                            <div class="form-group">
+                                <label>Enter tag</label>
+                                <input type="text" name="tag" class="form-control" placeholder="Enter tag" required="required">
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6 col-xs-6">
+                                    <div class="row">
+                                        <div class="col-md-12 col-xs-12">
+                                            <label>Sort by</label>
+                                        </div>
+                                        <div class="checkbox col-md-12 col-xs-12 text-center">
+                                            <label class="medium-margin">
+                                                <input type="radio" name="sort" value="likes"> Likes
+                                            </label>
+                                            <label class="medium-margin">
+                                                <input type="radio" name="sort" value="date"> Date
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6 col-xs-6">
+                                    <div class="row">
+                                        <div class="col-md-12 col-xs-12">
+                                            <label> If Word Cloud</label>
+                                        </div>
+                                        <div class="checkbox col-md-12 col-xs-12 text-center">
+                                            <label class="medium-margin">
+                                                <input type="checkbox"  name="cloud"> Display Word Cloud
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-success col-md-12 col-xs-12" />
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'about/team.html.twig' %}
+
+{% endblock %}

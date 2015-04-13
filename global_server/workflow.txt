@@ -1,0 +1,62 @@
+---------------------------------------------------------------------------------------------------------
+TODO
+
+    -   Task Scheduler :
+            Keeping track of all Count + Select Tasks Over All Slaves
+            When all ready for level 1 (ex: count) then schedule the next tasks
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------
+GLOBAL SETUP
+
+1)
+    ClientRequest :
+        -   Get Data from form
+        -   Send request to General Server
+
+2)
+    General Server :
+        -   Receive Request from Client
+        -   Transmit Request to Master Server
+
+        Note:
+            General Server is just an intermediary. It has no other purpose.
+            It exists to verfiy the data from the PHP-Client Server, and
+            transmit the data to the Master Server
+
+3)
+    Master Server :
+        -   Receive Request from General Server
+        -   Keep track of Active Slaves
+        -   Distribute workload equally over free Slaves
+        -   Send Commands to Slave Servers
+
+4)
+    Slave Server :
+        -   Recieve Command from Master Server
+        -   Do work
+        -   Send response to Master Server
+
+
+
+--------------------------------------------------------------------------------------------------------
+
+Tag : Barcelone
+
+Master:
+    -   Search in which database does tag exist : Shuffle function
+
+    -   From that Database : Divide Files between Slaves
+
+    -   Mapper_Select
+
+    -   Reduce_Merge
+
+    -   Mapper_Sort
+
+
+--------------------------------------------------------------------------------------------------------
+Mapper_Count : Indexing Data

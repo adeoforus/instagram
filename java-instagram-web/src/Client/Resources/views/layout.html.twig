@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Adeoco - Java Instagram</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link href="./assets/css/theme.css" />
+    <link rel="apple-touch-icon" href="./assets/images/apple-touch-icon.png">
+
+    <!-- bootstrap -->
+    <link href="./assets/plugins/bootstrap-3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="./assets/plugins/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- lightbox -->
+    <link href="./assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Themes styles-->
+    <link href="./assets/css/theme.css" rel="stylesheet">
+
+    <!-- Your custom css -->
+    <link href="./assets/css/theme-custom.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/adeoco.ico">
+
+
+</head>
+<body>
+<!-- wrapper page -->
+<div class="wrapper">
+    <!-- main-header -->
+    <header class="main-header">
+
+        <!-- main navbar -->
+        <nav class="navbar navbar-default main-navbar hidden-sm hidden-xs">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav">
+                        <li class="container-fluid">
+                            <div class="navbar-header">
+                                    <a class="navbar-brand">
+                                        <img alt="Brand" src="./assets/images/adeoco.jpg" width="30" style="position:relative;bottom:5px;">
+                                    </a>
+                                    <a class="navbar-brand text-center" >
+                                        <div style="text-align:center">
+                                            <span style="color:white">Adeoco - Java Instagram Project </span    >
+                                        </div>
+
+                                    </a>
+
+                            </div>
+                        </li>
+                        <!--<li  class=""><a href=""><strong>Publier une offre</strong></a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav><!-- end main navbar -->
+    </header><!-- end main-header -->
+
+    {% block body %}
+    {% endblock %}
+
+</div>
+
+<!-- main-footer -->
+<footer class="main-footer">
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <ul class="list-inline link-footer text-center-xs">
+                    <li><a>adeoco</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer><!-- end main-footer -->
+
+
+</body>
+</html>

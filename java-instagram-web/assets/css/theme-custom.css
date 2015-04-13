@@ -1,0 +1,178 @@
+::-webkit-scrollbar {
+    width: 13px;
+} /* this targets the default scrollbar (compulsory) */
+
+::-webkit-scrollbar-track {
+    background-color: white;
+} /* the new scrollbar will have a flat appearance with the set background color */
+
+::-webkit-scrollbar-thumb {
+    /*background-color: rgba(0, 0, 0, 0.2);*/
+    background-color: rgb(60,60,60);
+} /* this will style the thumb, ignoring the track */
+
+::-webkit-scrollbar-button {
+    /*background-color: #7c2929;*/
+    background-color: #808080;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+
+
+::-webkit-scrollbar-corner {
+    background-color: #000000;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+body {
+    /*scrollbar-face-color: rgb(60,60,60);*/
+}
+
+.bj-tag-container{
+    display: inline-block;
+    background-color:grey;
+    color:white;
+    padding: 3px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bj-tag-container:hover{
+    opacity: 0.5;
+}
+
+.bj-tag-body{
+
+}
+
+.bj-info-btn-group{
+    margin-top:20px;
+}
+
+.bj-track-cnt{
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+
+.bj-tag-container{
+    display: inline-block;
+    background-color:grey;
+    color:white;
+    padding: 3px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bj-tag-container:hover{
+    opacity: 0.5;
+}
+
+.bj-tag-body{
+
+}
+
+.header-social-list li{
+    display: inline-block
+}
+
+.panel-right{
+    padding-top:20px;
+}
+
+.panel-right .panel{
+    text-align: center;
+}
+
+
+.panel-left{
+    padding-top:20px;
+}
+
+.panel-block{
+    padding-top:10px;
+}
+
+.panel-header-large{
+    font-weight: bold;
+    font-size:18px;
+    margin-left:20px;
+    margin-top:10px;
+    text-decoration: underline
+}
+
+.table-header{
+    text-decoration: underline;
+}
+
+.td-heavy{
+    color:black;
+    font-weight: bold;
+
+}
+
+.first{
+    z-index: 100;
+    background-color: #3C3C3C;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+.text-small{
+    font-size: 12px;
+}
+
+.radio-inline{
+    display:inline-block;
+    padding-right:20px;
+}
+
+.padding-large{
+    padding:40px;
+}
+
+.text-green{
+    color:darkgreen;
+}
+
+.sticky-bottom{
+    width: 100%;
+    border-radius: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.padding-side{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.alpha-list li{
+    display: inline-block;
+    margin-right:10px;
+    font-weight: bold;
+    font-size:16px;
+}
+
+.alpha-list-content li{
+    display: inline-block;
+    margin-right:10px;
+    font-weight: bold;
+    font-size:16px;
+
+}
+
+.alpha-sub-list {
+    padding-left:20px;
+}
+.alpha-sub-list li{
+    display: list-item;
+    list-style: none;
+    margin-bottom:5px;
+    border-bottom:solid;
+    border-width:1px;
+}
+
+.alpha-list-item{
+    border-left-style: solid;
+    border-width: 1px;
+}
